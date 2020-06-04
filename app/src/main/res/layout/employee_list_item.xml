@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/profile_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:orientation="vertical"
+                >
+
+                    <TextView
+                        android:id="@+id/hdn_ScheduleCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="sunn"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:textColor="#121111" />
+
+                    <TextView
+                        android:id="@+id/LTE_INSP_Label1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="tatatatat"
+                        android:textColor="#1C296E" />
+                    <TextView
+                        android:id="@+id/LTE_INSP_Label3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="tatatatat"
+                        android:textColor="#121111" />
+                    <TextView
+                        android:id="@+id/LTE_INSP_Label5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="tatatatat"
+                        android:textColor="#121111" />
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alert_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/reason_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/success_img"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/ic_success_tick"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/failed_img"
+            android:layout_gravity="center"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/cancel"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/alert_message_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:text="Are You Sure do you want to delete the item permanently"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/alert_btn_lay"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/button_failure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/button_success"
+                android:layout_marginRight="20dp"
+                android:padding="2dp"
+                android:clickable="true"
+                android:text="Cancel"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#E90A0A" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/button_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:clickable="true"
+                android:text="Delete"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#0B0A0A"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
